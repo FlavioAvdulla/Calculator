@@ -23,7 +23,6 @@ body {
     height: 100%;
     padding: 20px;
     font-size: 5rem;
-
     text-align: left;
     border: none;
     background-color: rgb(65, 65, 65);
@@ -34,49 +33,84 @@ body {
     font-size: 1rem;
 } */
 
-#keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.all-keys {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 25px;
     gap: 10px;
     margin: 0px auto;
-    padding: 25px;
 }
 
-button {
+.all-keys button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* width: 100px; */
+    width: 100%;
+    height: 100px;
     padding: 30px;
-    aspect-ratio: 1 / 1;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+#keys button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    /* aspect-ratio: 1 / 1; */
     border-radius: 10px;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
-    font-size: 2rem;
-    font-weight: bold;
     cursor: pointer;
     /* transition: 0.1s ease-in-out; */
 }
 
-button:hover {
+
+
+#keys .number-btn:hover {
     background-color: hsl(0, 0%, 30%);
 }
 
-button:active {
+#keys .number-btn:active {
     background-color: hsl(0, 0%, 35%);
 }
 
-.operator-btn {
+.clear-operator-btn {
     background-color: hsl(195, 100%, 50%);
-    color: rgb(39, 39, 39);;
+    color: rgb(39, 39, 39);
 }
 
-.operator-btn:hover {
+#keys .operator-btn,
+.clear-operator-btn {
+    background-color: hsl(195, 100%, 50%);
+    color: rgb(39, 39, 39);
+}
+
+
+#keys .operator-btn:hover,
+.all-keys button:hover {
     background-color: hsl(195, 100%, 60%);
 }
 
-.operator-btn:active {
+
+#keys .operator-btn:active,
+.all-keys button:active {
     background-color: hsl(195, 100%, 70%)
 }
