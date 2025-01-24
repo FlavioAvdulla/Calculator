@@ -3,7 +3,7 @@
 ## Description
 This project is a simple calculator implemented using HTML, CSS, and JavaScript. It allows basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator features a responsive design and an easy-to-use interface.
 
-## Project Preciew
+## Project Preview
 
 [CLICK FOR PREVIEW HERE](https://calculator-vert-phi.vercel.app/)
 
