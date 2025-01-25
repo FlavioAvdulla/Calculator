@@ -114,3 +114,9 @@ body {
 .all-keys button:active {
     background-color: hsl(195, 100%, 70%)
 }
+
+@media (max-width:750px) {
+    body {
+        scale: 70%;
+    }
+}
